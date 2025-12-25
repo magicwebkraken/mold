@@ -1,17 +1,9 @@
 const allLinks = document.querySelectorAll('a');
-if (allLinks) {
-  allLinks.forEach((link) => {
-    const hrefValue = link.getAttribute('href');
-    if (!(hrefValue === '#')) {
-      link.setAttribute('href', '#');
-      link.onclick = () => false;
-    }
-  });
-}
+
 
 function demo() {
   const demoBlock = document.createElement('div');
-  demoBlock.innerText = 'Demo version of the website.';
+  demoBlock.innerText = 'CREATED BY MATT FUIRE';
   demoBlock.style.cssText = `
   pointer-events: none;
   user-select: none;
